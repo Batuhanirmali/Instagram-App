@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		FFE5BB162A24F637002F6770 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFE5BB152A24F637002F6770 /* AppDelegate.swift */; };
 		FFE5BB182A24F637002F6770 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFE5BB172A24F637002F6770 /* SceneDelegate.swift */; };
-		FFE5BB1A2A24F637002F6770 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFE5BB192A24F637002F6770 /* ViewController.swift */; };
+		FFE5BB1A2A24F637002F6770 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFE5BB192A24F637002F6770 /* HomeViewController.swift */; };
 		FFE5BB1D2A24F637002F6770 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFE5BB1B2A24F637002F6770 /* Main.storyboard */; };
 		FFE5BB1F2A24F639002F6770 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FFE5BB1E2A24F639002F6770 /* Assets.xcassets */; };
 		FFE5BB222A24F639002F6770 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFE5BB202A24F639002F6770 /* LaunchScreen.storyboard */; };
@@ -19,7 +19,7 @@
 		FFE5BB122A24F637002F6770 /* Instagram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Instagram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFE5BB152A24F637002F6770 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FFE5BB172A24F637002F6770 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		FFE5BB192A24F637002F6770 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FFE5BB192A24F637002F6770 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		FFE5BB1C2A24F637002F6770 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FFE5BB1E2A24F639002F6770 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FFE5BB212A24F639002F6770 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -56,15 +56,55 @@
 		FFE5BB142A24F637002F6770 /* Instagram */ = {
 			isa = PBXGroup;
 			children = (
-				FFE5BB152A24F637002F6770 /* AppDelegate.swift */,
-				FFE5BB172A24F637002F6770 /* SceneDelegate.swift */,
-				FFE5BB192A24F637002F6770 /* ViewController.swift */,
-				FFE5BB1B2A24F637002F6770 /* Main.storyboard */,
-				FFE5BB1E2A24F639002F6770 /* Assets.xcassets */,
-				FFE5BB202A24F639002F6770 /* LaunchScreen.storyboard */,
+				FFE5BB2C2A24F781002F6770 /* Resources */,
+				FFE5BB2B2A24F773002F6770 /* Models */,
+				FFE5BB2A2A24F769002F6770 /* Views */,
+				FFE5BB292A24F761002F6770 /* Controllers */,
 				FFE5BB232A24F639002F6770 /* Info.plist */,
 			);
 			path = Instagram;
+			sourceTree = "<group>";
+		};
+		FFE5BB292A24F761002F6770 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				FFE5BB192A24F637002F6770 /* HomeViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		FFE5BB2A2A24F769002F6770 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FFE5BB2D2A24F7D8002F6770 /* Storyboards */,
+				FFE5BB1E2A24F639002F6770 /* Assets.xcassets */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		FFE5BB2B2A24F773002F6770 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		FFE5BB2C2A24F781002F6770 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				FFE5BB152A24F637002F6770 /* AppDelegate.swift */,
+				FFE5BB172A24F637002F6770 /* SceneDelegate.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		FFE5BB2D2A24F7D8002F6770 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				FFE5BB1B2A24F637002F6770 /* Main.storyboard */,
+				FFE5BB202A24F639002F6770 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +178,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FFE5BB1A2A24F637002F6770 /* ViewController.swift in Sources */,
+				FFE5BB1A2A24F637002F6770 /* HomeViewController.swift in Sources */,
 				FFE5BB162A24F637002F6770 /* AppDelegate.swift in Sources */,
 				FFE5BB182A24F637002F6770 /* SceneDelegate.swift in Sources */,
 			);

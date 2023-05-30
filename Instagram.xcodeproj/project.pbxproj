@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		A677E7866C1B65E6F22187C0 /* Pods_Instagram.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6AF020B9985BA63266F82A5 /* Pods_Instagram.framework */; };
 		FFBFFEF92A2696FB00477195 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FFBFFEF82A2696FB00477195 /* GoogleService-Info.plist */; };
+		FFBFFEFC2A269BF400477195 /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFBFFEFB2A269BF400477195 /* DatabaseManager.swift */; };
+		FFBFFEFE2A269C9600477195 /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFBFFEFD2A269C9600477195 /* AuthManager.swift */; };
+		FFBFFF002A269CE100477195 /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFBFFEFF2A269CE100477195 /* StorageManager.swift */; };
 		FFE5BB162A24F637002F6770 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFE5BB152A24F637002F6770 /* AppDelegate.swift */; };
 		FFE5BB182A24F637002F6770 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFE5BB172A24F637002F6770 /* SceneDelegate.swift */; };
 		FFE5BB1A2A24F637002F6770 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFE5BB192A24F637002F6770 /* HomeViewController.swift */; };
@@ -36,6 +39,9 @@
 		A9E0186043DD64D4DCCD1910 /* Pods-Instagram.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Instagram.debug.xcconfig"; path = "Target Support Files/Pods-Instagram/Pods-Instagram.debug.xcconfig"; sourceTree = "<group>"; };
 		B6AF020B9985BA63266F82A5 /* Pods_Instagram.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Instagram.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFBFFEF82A2696FB00477195 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		FFBFFEFB2A269BF400477195 /* DatabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseManager.swift; sourceTree = "<group>"; };
+		FFBFFEFD2A269C9600477195 /* AuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthManager.swift; sourceTree = "<group>"; };
+		FFBFFEFF2A269CE100477195 /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
 		FFE5BB122A24F637002F6770 /* Instagram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Instagram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFE5BB152A24F637002F6770 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FFE5BB172A24F637002F6770 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -87,6 +93,21 @@
 				B6AF020B9985BA63266F82A5 /* Pods_Instagram.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FFBFFEFA2A269BC900477195 /* General */ = {
+			isa = PBXGroup;
+			children = (
+				FFE5BB3D2A24F964002F6770 /* PostViewController.swift */,
+				FFE5BB3F2A24F98D002F6770 /* EditProfileViewController.swift */,
+				FFE5BB412A24F9A2002F6770 /* SettingsViewController.swift */,
+				FFE5BB432A24F9B5002F6770 /* ListViewController.swift */,
+				FFE5BB452A24F9C8002F6770 /* SearchViewController.swift */,
+				FFE5BB472A24F9DA002F6770 /* SearchResultViewController.swift */,
+				FFE5BB492A24F9FA002F6770 /* PostEditorViewController.swift */,
+				FFE5BB4B2A24FA0F002F6770 /* PublishPostViewController.swift */,
+			);
+			path = General;
 			sourceTree = "<group>";
 		};
 		FFE5BB092A24F637002F6770 = {
@@ -150,6 +171,9 @@
 				FFBFFEF82A2696FB00477195 /* GoogleService-Info.plist */,
 				FFE5BB152A24F637002F6770 /* AppDelegate.swift */,
 				FFE5BB172A24F637002F6770 /* SceneDelegate.swift */,
+				FFBFFEFB2A269BF400477195 /* DatabaseManager.swift */,
+				FFBFFEFD2A269C9600477195 /* AuthManager.swift */,
+				FFBFFEFF2A269CE100477195 /* StorageManager.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -179,14 +203,7 @@
 			isa = PBXGroup;
 			children = (
 				FFE5BB382A24F90B002F6770 /* Onboarding */,
-				FFE5BB3D2A24F964002F6770 /* PostViewController.swift */,
-				FFE5BB3F2A24F98D002F6770 /* EditProfileViewController.swift */,
-				FFE5BB412A24F9A2002F6770 /* SettingsViewController.swift */,
-				FFE5BB432A24F9B5002F6770 /* ListViewController.swift */,
-				FFE5BB452A24F9C8002F6770 /* SearchViewController.swift */,
-				FFE5BB472A24F9DA002F6770 /* SearchResultViewController.swift */,
-				FFE5BB492A24F9FA002F6770 /* PostEditorViewController.swift */,
-				FFE5BB4B2A24FA0F002F6770 /* PublishPostViewController.swift */,
+				FFBFFEFA2A269BC900477195 /* General */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -323,12 +340,15 @@
 				FFE5BB332A24F88D002F6770 /* NotificationViewController.swift in Sources */,
 				FFE5BB3C2A24F93D002F6770 /* RegistrationViewController.swift in Sources */,
 				FFE5BB4A2A24F9FA002F6770 /* PostEditorViewController.swift in Sources */,
+				FFBFFF002A269CE100477195 /* StorageManager.swift in Sources */,
 				FFE5BB3E2A24F964002F6770 /* PostViewController.swift in Sources */,
+				FFBFFEFC2A269BF400477195 /* DatabaseManager.swift in Sources */,
 				FFE5BB1A2A24F637002F6770 /* HomeViewController.swift in Sources */,
 				FFE5BB482A24F9DA002F6770 /* SearchResultViewController.swift in Sources */,
 				FFE5BB3A2A24F928002F6770 /* LoginViewController.swift in Sources */,
 				FFE5BB462A24F9C8002F6770 /* SearchViewController.swift in Sources */,
 				FFE5BB352A24F8AA002F6770 /* ProfileViewController.swift in Sources */,
+				FFBFFEFE2A269C9600477195 /* AuthManager.swift in Sources */,
 				FFE5BB162A24F637002F6770 /* AppDelegate.swift in Sources */,
 				FFE5BB182A24F637002F6770 /* SceneDelegate.swift in Sources */,
 				FFE5BB442A24F9B5002F6770 /* ListViewController.swift in Sources */,

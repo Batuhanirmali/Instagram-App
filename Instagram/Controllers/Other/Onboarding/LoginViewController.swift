@@ -47,8 +47,10 @@ class LoginViewController: UIViewController {
     
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
-        
+         
         // assign frames
+        
+        headerView.frame = CGRect(x: 0, y: view.safeAreaInsets.top, width: view.width, height: 2)
     }
     
     private func addSubviews() {
